@@ -9,20 +9,20 @@ persist.audio.fluence.speaker=true
 tunnel.audio.encode=false
 media.aac_51_output_enabled=true
 audio.offload.buffer.size.kb=32
-audio.offload.video=true
-audio.offload.pcm.16bit.enable=false
+audio.offload.video=false
+audio.offload.pcm.16bit.enable=true
 audio.offload.pcm.24bit.enable=true
 audio.offload.track.enable=false
 audio.deep_buffer.media=true
 use.voice.path.for.pcm.voip=true
-audio.offload.multiaac.enable=true
-audio.offload.gapless.enabled=true
+audio.offload.multiaac.enable=false
+audio.offload.gapless.enabled=false
 audio.safx.pbe.enabled=true
 audio.parser.ip.buffer.size=262144
 audio.dolby.ds2.enabled=false
 audio.dolby.ds2.hardbypass=false
 audio.offload.passthrough=false
-audio.offload.multiple.enabled=true
+audio.offload.multiple.enabled=false
 audio.offload.min.duration.secs=30
 af.fast_track_multiplier=1
 audio_hal.period_size=160
@@ -39,7 +39,7 @@ persist.camera.llnoise=1
 camera.hal1.packagelist=com.skype.raider,com.whatsapp,com.tencent.mm,com.google.android.GoogleCamera
 
 # HAX - remove ASAP
-media.stagefright.legacyencoder=true
+media.stagefright.legacyencoder=false
 media.stagefright.less-secure=true
 
 # Display power reduction (FOSS)
@@ -76,7 +76,7 @@ ro.sf.lcd_density=480
 persist.sys.wfd.virtual=0
 sdm.perf_hint_window=50
 persist.hwc.enable_vds=1
-sdm.debug.disable_rotator_split=1
+sdm.debug.disable_rotator_split=0
 
 # NFC
 ro.nfc.port=I2C
@@ -86,7 +86,7 @@ ro.am.reschedule_service=true
 ro.vendor.extension_library=libqti-perfd-client.so
 ro.min_freq_0=307200
 ro.min_freq_4=307200
-ro.sys.fw.bg_apps_limit=60
+ro.sys.fw.bg_apps_limit=0
 
 # QCOM
 ro.frp.pst=/dev/block/bootdevice/by-name/config
@@ -112,12 +112,12 @@ ro.telephony.default_network=22,22
 telephony.lteOnCdmaDevice=1
 ro.telephony.call_ring.multiple=false
 persist.radio.apm_sim_not_pwdn=1
-persist.radio.custom_ecc=1
+persist.radio.custom_ecc=0
 persist.radio.sib16_support=1
 persist.data.qmi.adb_logmask=0
 persist.net.doxlat=true
 persist.oem.dump=0
-persist.radio.ignore_dom_time=5
+persist.radio.ignore_dom_time=0
 persist.radio.hw_mbn_update=0
 persist.radio.sw_mbn_update=0
 persist.radio.start_ota_daemon=1
